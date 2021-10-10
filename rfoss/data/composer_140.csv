@@ -1,0 +1,39 @@
+Indicator Name,Indicator ID,Score
+Robustness,I01,0.6
+Scalability,I02,0.6
+Usability,I03,0.6
+Effectiveness,I04,0.5
+Corrections,I05,0.6
+Improvements,I06,0.6
+Security,I07,0.6
+Testing process,I08,1
+Coverage,I09,0.89
+License type,I10,1
+Dual licensing,I11,0
+Commercial resources,I12,1
+Commercial training,I13,1
+Industry adoption,I14,1
+Non profit / Foundation support,I15,1
+For profit company support,I16,1
+Donations,I17,0
+Installability,I18,0.6
+Configurability,I19,0.6
+Self-contained,I20,0.6
+Resource Utilization,I21,0.6
+Complexity,I22,0.8
+Modularity,I23,0.6
+Instability,I24,0.54
+Cohesion,I25,0.67
+Governance model,I26,0
+Project Road-map,I27,1
+Code of conduct,I28,1
+Coding standards,I29,1
+Documentation standards,I30,1
+Developers Attracted,I31,0.11
+Active Developers,I32,0.33
+Number of open issues,I33,0.95
+Open / Closed issues,I34,0.96
+Source Code Documentation,I35,0.8
+Localization process,I36,1
+Issue tracking activity (reporting bugs),I37,0.05
+User guide (completeness),I38,1

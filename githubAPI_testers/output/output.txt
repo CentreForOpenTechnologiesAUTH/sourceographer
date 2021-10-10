@@ -1,0 +1,25 @@
+RFOSS Scores:
+
+D1. Source Code: 67.0%
+
+G01. Architecture: 57.0%
+G02. Maintainability: 60.0%
+G03. Security & Testing: 84.0%
+
+D2. Business & Legal: 81.0%
+
+G04. License: 100.0%
+G05. Market: 75.0%
+G06. Support: 67.0%
+
+D3. Integration & Reuse: 63.0%
+
+G07. Initialization: 60.0%
+G08. Dependencies: 60.0%
+G09. Reuse: 69.0%
+
+D4. Social (Community): 71.0%
+
+G10. Development process & Governance: 80.0%
+G11. Developer Base: 60.0%
+G12. User Base: 72.0%
