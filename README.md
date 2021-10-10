@@ -57,5 +57,5 @@ A detailed description of the full framework is available [here](http://users.au
 
 ## Authors
 - Apostolos Kritikos, [e-mail](mailto:akritiko@csd.auth.gr), [github](https://github.com/akritiko)
-- Prodromos Polychroniadis, [e-mail](mailto:propol@csd.auth.gr), [github](https://github.com/propol)
+- Prodromos Polychroniadis, [e-mail](mailto:prodpoly@csd.auth.gr), [github](https://github.com/propol)
 - Ioannis Stamelos, [e-mail](mailto:stamelos@csd.auth.gr), [github](https://github.com/Stamelos)
