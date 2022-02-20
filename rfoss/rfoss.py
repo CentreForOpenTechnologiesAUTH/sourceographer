@@ -6,17 +6,17 @@
 # Version: 1.0
 #
 # This source code is part of my PhD thesis, entitled "Open 
-# Source Software Engineering" in cooperation with the Informatics 
-# Department of the Aristotle University of Thessaloniki.
+# Source Software Engineering" in cooperation with the School of 
+# Informatics, Aristotle University of Thessaloniki.
 #
 # The PhD is happening under the supervision of Prof. Ioannis Stamelos.
 #
 # This research is co-financed by Greece and the European Union 
 # (European Social Fund- ESF) through the Operational Programme 
-# «Human Resources Development, Education and Lifelong Learning» 
-# in the context of the project “Strengthening Human Resources 
-# Research Potential via Doctorate Research” (MIS-5000432), 
-# implemented by the State Scholarships Foundation (ΙΚY).
+# "Human Resources Development, Education and Lifelong Learning" 
+# in the context of the project "Strengthening Human Resources 
+# Research Potential via Doctorate Research" (MIS-5000432), 
+# implemented by the State Scholarships Foundation (ΙΚY), Greece.
 #
 ##
 ###
