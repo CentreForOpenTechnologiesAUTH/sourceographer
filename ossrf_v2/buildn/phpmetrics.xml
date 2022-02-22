@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="@package_version@" timestamp="2022-02-22T00:43:37+02:00">
+  <file name="PhpOffice\PhpWord\Media">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.48 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.237) than 5 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord\Element (0.452)
+* PhpOffice\PhpWord\Escaper (0.625)
+* PhpOffice\PhpWord\Writer\Word2007\Part (0.909)
+* PhpOffice\PhpWord\Style (0.313)
+* PhpOffice\PhpWord\Metadata (0.75)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Part\Styles">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.22 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 202 logical lines of code
+* Class has 271 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Part\Content">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.25 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 277 logical lines of code
+* Class has 369 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Element\Text">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 16)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Style\Paragraph">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 27)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.64 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\">
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.382) than 1 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord\Element (0.452)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\Part\Head">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.44 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\Element\Text">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.5 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\Element\Table">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 23)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.6 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\Style\Paragraph">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 14)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\Style\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\AbstractWriter">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.55 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\RTF\Part\Document">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 18)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.74 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\RTF\Part\Header">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.37 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\RTF\Style\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.05 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Styles">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.88 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Chart">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 14)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.67 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 262 logical lines of code
+* Class has 388 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Theme">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 2.24 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 332 logical lines of code
+* Class has 378 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Numbering">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.48 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\FontTable">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.37 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Document">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.35 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\Settings">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.05 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Element\TOC">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.44 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Element\FormField">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.41 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Element\Field">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 13)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.57 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\">
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.5) than 1 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord\Writer\Word2007\Element (0.757)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\Paragraph">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.45 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\Frame">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.39 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\Font">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 14)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.58 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\TemplateProcessor">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (19, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=3)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 117)
+* Component uses 475 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 14)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 4.82 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 688 logical lines of code
+* Class has 1105 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Escaper\">
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.625) than 1 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord\Writer\RTF\Element (0.778)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Escaper\Rtf">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 12)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.37 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\ODText\Content">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 20)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\MsDoc">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 182)
+* Component uses 1320 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 116)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 15.12 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 1611 logical lines of code
+* Class has 2230 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\RTF\Document">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.62 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.5 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\Styles">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 18)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\AbstractPart">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 88)
+* Component uses 247 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 23)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 3.3 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 391 logical lines of code
+* Class has 609 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\Numbering">
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 11)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.45 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\Document">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.52 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\Settings">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.41 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\ComplexType\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\SimpleType\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.083) than 1 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord\Shared (0.191)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\Text">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.58 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+    <violation beginline="1" rule="Stable Dependencies Principle" ruleset="Stable Dependencies Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should depend in the direction of stability.
+
+This package is more stable (0.191) than 2 package(s) that it depends on.
+The packages that are more stable are
+
+* PhpOffice\PhpWord (0.237)
+* PhpOffice\PhpWord\Element (0.452)</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\Microsoft\PasswordEncoder">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.08 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PclZip">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 553)
+* Component uses 2075 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 63)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 18.07 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 2309 logical lines of code
+* Class has 3948 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\Html">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 143)
+* Component uses 347 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 42)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 4.82 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 633 logical lines of code
+* Class has 921 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\OLERead">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.09 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\ZipArchive">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.8 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\Drawing">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.36 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\Converter">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 30)
+* Component uses 116 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 16)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.6 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Exception\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\AbstractElement">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=3)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 24)
+* Component uses 81 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.48 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\Image">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 43)
+* Component uses 148 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Too complex method code" ruleset="Too complex method code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Max cyclomatic complexity of class methods is 11)
+
+Maybe you should delegate some code to other objects or split complex method.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.84 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 285 logical lines of code
+* Class has 528 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\AbstractContainer">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.72 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\Field">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.62 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Settings">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.36 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Metadata\DocInfo">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 23)
+* Component uses 91 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.65 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 226 logical lines of code
+* Class has 483 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\">
+    <violation beginline="1" rule="Stable Abstractions Principle" ruleset="Stable Abstractions Principle" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">Packages should be either abstract and stable or concrete and instable.
+
+This package is instable and abstract.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\Section">
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 219 logical lines of code
+* Class has 550 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\Paragraph">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 9)
+* Component uses 87 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.62 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 283 logical lines of code
+* Class has 733 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\Frame">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.39 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 224 logical lines of code
+* Class has 564 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\Table">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 11)
+* Component uses 81 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.54 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 284 logical lines of code
+* Class has 682 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\AbstractStyle">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.4 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\ListItem">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.54 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\Font">
+    <violation beginline="1" rule="Too complex class code" ruleset="Too complex class code" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">This class looks really complex.
+
+* Algorithms are complex (Total cyclomatic complexity of class is 3)
+* Component uses 80 operators
+
+Maybe you should delegate some code to other objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.73 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 333 logical lines of code
+* Class has 840 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\PhpWord">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (19, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=8)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.51 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\ElementTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (9, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=7)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.64 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 221 logical lines of code
+* Class has 266 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Style\ParagraphTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 3.11 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 359 logical lines of code
+* Class has 395 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Style\FontTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.26 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\ODText\Style\SectionTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.59 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007Test">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=7)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.42 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTML\ElementTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.74 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\HTMLTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.38 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\RTF\StyleTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (10, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=5)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.46 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\RTF\ElementTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.48 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\DocumentTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (21, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=4)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 3.29 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 407 logical lines of code
+* Class has 498 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\StylesTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.41 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Part\SettingsTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.23 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 279 logical lines of code
+* Class has 334 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\ElementTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 2.33 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 292 logical lines of code
+* Class has 351 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\ChartTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 1.2 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\FontTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.48 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Writer\Word2007\Style\TableTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.41 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\StyleTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.45 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Reader\Word2007\ElementTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.53 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 230 logical lines of code
+* Class has 265 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\TemplateProcessorTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (27, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=5)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 2.62 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 553 logical lines of code
+* Class has 689 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\HtmlTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (36, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=4)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 3.76 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+    <violation beginline="1" rule="Too long" ruleset="Too long" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="4">This class looks really long.
+
+* Class has 633 logical lines of code
+* Class has 773 lines of code
+
+Maybe your class should not exceed 200 lines of logical code</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\ConverterTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.57 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Shared\XMLReaderTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=4)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\PhpWordTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (15, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=8)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.4 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\SettingsTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.37 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\FieldTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (11, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=5)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\ImageTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (14, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=5)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.56 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\CellTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (20, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=4)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.41 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\HeaderTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (19, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=3)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\SectionTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (13, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=5)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.42 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Element\FootnoteTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=3)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Metadata\DocInfoTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.43 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Metadata\SettingsTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (22, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=7)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\TextBoxTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.54 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\ParagraphTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=4)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.43 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\FontTest">
+    <violation beginline="1" rule="Blob / God object" ruleset="Blob / God object" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="2">A blob object (or "god class") does not follow the Single responsibility principle.
+
+* object has lot of public methods  (8, excluding getters and setters)
+* object has a high Lack of cohesion of methods (LCOM=3)
+* object knows everything (and use lot of external classes)
+
+Maybe you should reducing the number of methods splitting this object in many sub objects.</violation>
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.39 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\SectionTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.71 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+  <file name="PhpOffice\PhpWord\Style\TableTest">
+    <violation beginline="1" rule="Probably bugged" ruleset="Probably bugged" externalInfoUrl="http://www.phpmetrics.org/documentation/index.html" priority="3">This component contains in theory 0.53 bugs.
+
+* Calculation is based on number of operators, operands, cyclomatic complexity
+* See more details at https://en.wikipedia.org/wiki/Halstead_complexity_measures
+*  testsuites has dependency to this class.
+
+Maybe you should check your unit tests for this class.</violation>
+  </file>
+</pmd>
