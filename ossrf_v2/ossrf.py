@@ -384,7 +384,7 @@ for index, row in df.iterrows():
             a_r = row.repo_name
             pos = a_r.find('/')
             repo_name = a_r[pos+1:]
-            os.system('phpqa --analyzedDirs ./{0} --buildDir ./buildn --tools phpmetrics, phpmd'.format(repo_name))
+            os.system('phpqa --analyzedDirs ./{0} --buildDir ./build --tools phpmetrics'.format(repo_name))
             parse()
             get_metrics()
 
