@@ -25,8 +25,10 @@
 
 """ GENERIC LIBRARIES """
 import os
+import re
 import sys
 import csv
+import json
 import pandas as pd
 from math import pi
 import matplotlib.pyplot as plt
@@ -51,7 +53,7 @@ import xml.etree.ElementTree as ET
 df = pd.read_csv("./data/input.csv", index_col=0)
 
 # Github
-ACCESS_TOKEN = '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'
+ACCESS_TOKEN = 'MY_API_KEY'
 g = Github(ACCESS_TOKEN)
 
 # PHPQA
@@ -314,36 +316,89 @@ def get_issues(d_start, d_end, g_repo):
     print("Open/Closed Issues: ", open_closed_issues, "%")
     print("Issue Tracking Activity: ", issue_tracking_activity, "%")
 
-# PHPQA function
-def parse():
+# PHPMETRICS function
+def phpmetrics_export(filename):
+    phpmetrics = [
+        ["Lines of code", "LOC", ""],
+        ["Logical lines of code", "LOC", ""],
+        ["Comment lines of code", "LOC", ""],  
+        ["Average volume", "LOC", ""],
+        ["Average comment weight", "LOC", ""],
+        ["Average intelligent content", "LOC", ""],
+        ["Logical lines of code by class", "LOC", ""],
+        ["Logical lines of code by method", "LOC", ""],
+        ["Classes", "Object oriented programming", ""],
+        ["Interface", "Object oriented programming", ""],
+        ["Methods", "Object oriented programming", ""],
+        ["Methods by class", "Object oriented programming", ""],
+        ["Lack of cohesion of methods", "Object oriented programming", ""],
+        ["Average afferent coupling", "Coupling", ""],
+        ["Average efferent coupling",  "Coupling", ""], 
+        ["Average instability", "Coupling", ""],
+        ["Depth of Inheritance Tree",  "Coupling", ""],
+        ["Packages", "Package", ""],
+        ["Average classes per package", "Package", ""],
+        ["Average distance", "Package", ""],
+        ["Average incoming class dependencies", "Package", ""],
+        ["Average outgoing class dependencies", "Package", ""],
+        ["Average incoming package dependencies", "Package", ""],
+        ["Average outgoing package dependencies", "Package", ""],
+        ["Average Cyclomatic complexity by class", "Complexity", ""],
+        ["Average Weighted method count by class", "Complexity", ""],
+        ["Average Relative system complexity", "Complexity", ""],
+        ["Average Difficulty", "Complexity", ""],
+        ["Average bugs by class", "Bugs", ""],
+        ["Average defects by class (Kan)", "Bugs", ""],
+        ["Critical", "Violations", ""],
+        ["Error", "Violations", ""],
+        ["Warning", "Violations", ""],
+        ["Information", "Violations", ""]
+    ];
+    dfmetrics = pd.DataFrame(phpmetrics, columns=['Metric','Category', 'Value'],dtype=float)
+    print(df)
+    with open(filename) as f:
+        lines = f.readlines() # list containing lines of file
+        for line in lines:
+            line = line.strip() # remove leading/trailing white spaces
+            for index, row in dfmetrics.iterrows():
+                if re.search(r"\b"+row['Metric']+r"\b",line) and row['Value'] == "":
+                    s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
+                    print(row['Metric'] + " | " + s_nums[0])
+                    row['Value'] = s_nums[0]
+    #print(df)
+    dfmetrics.to_json (r'phpmetrics.json', orient='records')
 
-    tree = ET.parse(file)
-    root = tree.getroot()
-
-    root.attrib['namespace'] = 'Project'
-    root.attrib['tag'] = root.tag
-    dataProject.append(root.attrib)
-
-# PHPQA function
+# PHPMETRICS function
 def get_metrics():
+    # read file
+    with open('phpmetrics.json', 'r') as myfile:
+        data=myfile.read()
+    # parse file
+    obj = json.loads(data)
 
-    for line in dataProject:
-        cc = line.get('cyclomaticComplexity')
-        lcom = line.get('lcom')
-        instability = line.get('instability')
-        documentation = round(int(line.get('lloc')) / int(line.get('loc')) * 100)
-        noc = line.get('noc')
-    
+    loc = 0
+    lloc = 0
+    cc = 0
+    lcom = 0
+    ins = 0
+    doc = 0
+
+    for metric in obj:
+        if metric['Metric'] == "Lines of code":
+            loc = metric['Value']
+        elif metric['Metric'] == "Logical lines of code":
+            lloc = metric['Value']
+        elif metric['Metric'] == "Average Relative system complexity":
+            cc = metric['Value']
+        elif metric['Metric'] == "Lack of cohesion of methods":
+            lcom = metric['Value']
+        elif metric['Metric'] == "Average instability":
+            ins = metric['Value']
+
     df.at[index,'i22_complexity'] =  cc
-    df.at[index,'i24_instability'] = instability
+    df.at[index,'i24_instability'] = ins
     df.at[index,'i25_cohesion'] = lcom
-    df.at[index,'i35_documendation'] = documentation
-    #df['noc'] = df['noc'].fillna(noc)
-    
-    print('Complexity: ', cc)
-    print('LCOM: ', lcom)
-    print('Instability: ', instability)
-    print('Documentation: ', documentation, "%")
+    df.at[index,'i35_documendation'] = round((int(lloc)/int(loc))*100)
 
 """ MAIN FUNCTION """
 
@@ -366,17 +421,17 @@ for index, row in df.iterrows():
             df.at[index,'i23_modularity'] = row.auto_expert_value
 
         # STEP 2: Get user input via GUI // 18 indicators
-        #callGUI() 
+        callGUI() 
 
         # STEP 3:Get Github input // 5 indicators
-        s_date = datetime.strptime(row.version_start_date, '%Y-%m-%d') # should be datetime objects or else PyGithub won't work
-        e_date = datetime.strptime(row.version_end_date, '%Y-%m-%d') # should be datetime objects or else PyGithub won't work
+        s_date = datetime.strptime(str(row.version_start_date), '%Y-%m-%d') # should be datetime objects or else PyGithub won't work
+        e_date = datetime.strptime(str(row.version_end_date), '%Y-%m-%d') # should be datetime objects or else PyGithub won't work
         g_repo = row.repo_name    
-        #get_devs(s_date, e_date, g_repo)
-        #get_issues(s_date, e_date, g_repo)
+        get_devs(s_date, e_date, g_repo)
+        get_issues(s_date, e_date, g_repo)
 
         # STEP 4: Get language specific indicators // 4 indicators
-        # PHP w/ PHPQA Analyzer
+        # PHP w/ PHPMETRICS Analyzer
         if row.language == 'PHP':    
             url = row.repo_url
             tag = row.version_github_tag
@@ -384,47 +439,46 @@ for index, row in df.iterrows():
             a_r = row.repo_name
             pos = a_r.find('/')
             repo_name = a_r[pos+1:]
-            os.system('phpqa --analyzedDirs ./{0} --buildDir ./build --tools phpmetrics'.format(repo_name))
-            parse()
+            os.system('phpmetrics --report-html=myreport ./{0} >> phpmetrics.txt'.format(repo_name))
+            phpmetrics_export('phpmetrics.txt')
+            os.system('rm phpmetrics.txt')
             get_metrics()
 
-        # Calculate OSSRF goals and dimensions output
-        """
-        g1 = ( df.at[index,'i1_robustness'] + df.at[index,'i2_scalability'] + df.at[index,'i3_usability'] + df.at[index,'i4_effectiveness'] ) / 4
-        df.at[index,'g1_architecture'] = round( g1 * 100 )
-        g2 = ( df.at[index,'i5_corrections'] + df.at[index,'i6_improvements'] ) / 2
-        df.at[index,'g2_maintenability'] = round( g2 * 100 )
-        g3 = ( df.at[index,'i7_security'] + df.at[index,'i8_testing_process'] + df.at[index,'i9_coverage'] ) / 3
-        df.at[index,'g3_security_testing'] = round( g3 * 100 )
-        g4 = df.at[index,'i10_license_type']
-        df.at[index,'g4_license'] = round( g4 * 100 )
-        g5 = ( df.at[index,'i11_dual_licensing'] + df.at[index,'i12_commercial_resources'] + df.at[index,'i13_commercial_training'] + df.at[index,'i14_industry_adoption'] ) / 4
-        df.at[index,'g5_market'] = round( g5 * 100 )
-        g6 = ( df.at[index,'i15_ngo_support'] + df.at[index,'i16_corporate_support'] + df.at[index,'i17_donations'] ) / 3
-        df.at[index,'g6_support'] = round( g6 * 100 )
-        g7 = ( df.at[index,'i18_installability'] + df.at[index,'i19_configurability'] ) / 2
-        df.at[index,'g7_initialization'] = round( g7 * 100 )
-        g8 = ( df.at[index,'i20_self_contained'] + df.at[index,'i21_resource_utilization'] ) / 2
-        df.at[index,'g8_dependencies'] = round( g8 * 100 )
-        g9 = ( df.at[index,'i22_complexity'] + df.at[index,'i23_modularity'] + df.at[index,'i24_instability'] + df.at[index,'i25_cohesion'] ) / 4
-        df.at[index,'g9_reuse'] = round( g9 * 100 )
-        g10 = ( df.at[index,'i26_governance_model'] + df.at[index,'i27_project_road_map'] + df.at[index,'i28_code_of_conduct'] + df.at[index,'i29_coding_standards'] + df.at[index,'i30_documentation_standards'] ) / 5
-        df.at[index,'g10_dev_process_governance'] = round( g10 * 100 )
-        g11 = ( df.at[index,'i31_devs_attracted'] + df.at[index,'i32_devs_active'] + df.at[index,'i33_nof_open_issues'] + df.at[index,'i34_open_vs_closed_issues'] + df.at[index,'i35_documendation'] ) / 5
-        df.at[index,'g11_developer_base'] = round( g11 * 100 )
-        g12 = ( df.at[index,'i36_localization_process'] + df.at[index,'i37_issue_tracking'] + df.at[index,'i38_user_guide'] ) / 3
-        df.at[index,'g12_user_base'] = round( g12 * 100 )
-        
-        d1 = ( g1 + g2 + g3 ) / 3
-        df.at[index,'d1_source_code'] = round( d1 * 100 )
-        d2 = ( g4 + g5 + g6 ) / 3
-        df.at[index,'d2_business_legal'] = round( d2 * 100 )
-        d3 = ( g7 + g8 + g9 ) / 3
-        df.at[index,'d3_integration_reuse'] = round( d3 * 100 )
-        d4 = ( g10 + g11 + g12 ) / 3
-        df.at[index,'d4_social'] = round( d4 * 100 )
-        """
-        
+            # Calculate OSSRF goals and dimensions output
+            g1 = ( df.at[index,'i1_robustness'] + df.at[index,'i2_scalability'] + df.at[index,'i3_usability'] + df.at[index,'i4_effectiveness'] ) / 4
+            df.at[index,'g1_architecture'] = round( g1 * 100 )
+            g2 = ( df.at[index,'i5_corrections'] + df.at[index,'i6_improvements'] ) / 2
+            df.at[index,'g2_maintenability'] = round( g2 * 100 )
+            g3 = ( df.at[index,'i7_security'] + df.at[index,'i8_testing_process'] + df.at[index,'i9_coverage'] ) / 3
+            df.at[index,'g3_security_testing'] = round( g3 * 100 )
+            g4 = df.at[index,'i10_license_type']
+            df.at[index,'g4_license'] = round( g4 * 100 )
+            g5 = ( df.at[index,'i11_dual_licensing'] + df.at[index,'i12_commercial_resources'] + df.at[index,'i13_commercial_training'] + df.at[index,'i14_industry_adoption'] ) / 4
+            df.at[index,'g5_market'] = round( g5 * 100 )
+            g6 = ( df.at[index,'i15_ngo_support'] + df.at[index,'i16_corporate_support'] + df.at[index,'i17_donations'] ) / 3
+            df.at[index,'g6_support'] = round( g6 * 100 )
+            g7 = ( df.at[index,'i18_installability'] + df.at[index,'i19_configurability'] ) / 2
+            df.at[index,'g7_initialization'] = round( g7 * 100 )
+            g8 = ( df.at[index,'i20_self_contained'] + df.at[index,'i21_resource_utilization'] ) / 2
+            df.at[index,'g8_dependencies'] = round( g8 * 100 )
+            g9 = ( df.at[index,'i22_complexity'] + df.at[index,'i23_modularity'] + df.at[index,'i24_instability'] + df.at[index,'i25_cohesion'] ) / 4
+            df.at[index,'g9_reuse'] = round( g9 * 100 )
+            g10 = ( df.at[index,'i26_governance_model'] + df.at[index,'i27_project_road_map'] + df.at[index,'i28_code_of_conduct'] + df.at[index,'i29_coding_standards'] + df.at[index,'i30_documentation_standards'] ) / 5
+            df.at[index,'g10_dev_process_governance'] = round( g10 * 100 )
+            g11 = ( df.at[index,'i31_devs_attracted'] + df.at[index,'i32_devs_active'] + df.at[index,'i33_nof_open_issues'] + df.at[index,'i34_open_vs_closed_issues'] + df.at[index,'i35_documendation'] ) / 5
+            df.at[index,'g11_developer_base'] = round( g11 * 100 )
+            g12 = ( df.at[index,'i36_localization_process'] + df.at[index,'i37_issue_tracking'] + df.at[index,'i38_user_guide'] ) / 3
+            df.at[index,'g12_user_base'] = round( g12 * 100 )
+            
+            d1 = ( g1 + g2 + g3 ) / 3
+            df.at[index,'d1_source_code'] = round( d1 * 100 )
+            d2 = ( g4 + g5 + g6 ) / 3
+            df.at[index,'d2_business_legal'] = round( d2 * 100 )
+            d3 = ( g7 + g8 + g9 ) / 3
+            df.at[index,'d3_integration_reuse'] = round( d3 * 100 )
+            d4 = ( g10 + g11 + g12 ) / 3
+            df.at[index,'d4_social'] = round( d4 * 100 )
+
         # Update row when analysis is complete (analysis_complete = YES)
         df.at[index,'analysis_complete'] = 1
 
