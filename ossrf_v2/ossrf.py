@@ -3,7 +3,7 @@
 ##
 #
 # Open Source Software Resilience Framework (OSSRF)
-# Author: Apostolos Kritikos <akritiko@csd.auth.gr>
+# Authors: Apostolos Kritikos <akritiko@csd.auth.gr>, Prodromos Polychroniadis <propol@csd.auth.gr>
 # Version: 2.0
 #
 # This source code is part of my PhD thesis, entitled "Open 
@@ -48,26 +48,13 @@ from github import Github
 import xml.etree.ElementTree as ET
 
 """ GLOBAL VARIABLES """
-
-# Read CSV with input data
-df = pd.read_csv("./data/input.csv", index_col=0)
-
-# Github
-ACCESS_TOKEN = 'MY_API_KEY'
+df = pd.read_csv("./data/input.csv", index_col=0) # Read CSV with input data
+ACCESS_TOKEN = 'MY_API_KEY' # Github token and initialization
 g = Github(ACCESS_TOKEN)
 
-# PHPQA
-dataProject = []
-file = './buildn/phpmetrics.xml'
-
-
-""" FUNCTIONS """
-
-# callGUI function calls GUI to get user generated variables // 18 indicators
 def callGUI():
-
+    """ callGUI() calls GUI to get user generated variables (18 OSSRF indicators). """
     logging.basicConfig(filename="actions.log", level=logging.INFO)
-
     logging.info('GUI initiated @ {0}.'.format(datetime.now()))
 
     window = Tk()
@@ -354,19 +341,23 @@ def phpmetrics_export(filename):
         ["Warning", "Violations", ""],
         ["Information", "Violations", ""]
     ];
-    dfmetrics = pd.DataFrame(phpmetrics, columns=['Metric','Category', 'Value'],dtype=float)
-    print(df)
-    with open(filename) as f:
+    df = pd.DataFrame(phpmetrics, columns=['Metric','Category', 'Value']) 
+    with open('phpmetrics.txt') as f:
         lines = f.readlines() # list containing lines of file
         for line in lines:
-            line = line.strip() # remove leading/trailing white spaces
-            for index, row in dfmetrics.iterrows():
-                if re.search(r"\b"+row['Metric']+r"\b",line) and row['Value'] == "":
-                    s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
-                    print(row['Metric'] + " | " + s_nums[0])
-                    row['Value'] = s_nums[0]
-    #print(df)
-    dfmetrics.to_json (r'phpmetrics.json', orient='records')
+            line = line.strip() # remove leading/trailing white spaces    
+            for index, row in df.iterrows():
+                if row['Metric'] == "Average defects by class (Kan)":
+                    if re.search(r"\b"+"(Kan)"+r"\b",line) and row['Value'] == "": # add value only if there is not one yet.
+                        s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
+                        logging.info(row['Metric'] + ": " + s_nums[0]) # logging
+                        row['Value'] = s_nums[0]
+                else:
+                    if re.search(r"\b"+row['Metric']+r"\b",line) and row['Value'] == "": # add value only if there is not one yet.
+                        s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
+                        logging.info(row['Metric'] + ": " + s_nums[0]) # logging
+                        row['Value'] = s_nums[0]
+    df.to_json (r'phpmetrics.json', orient='records') # export to JSON with each item to reflect a tuple [Metric, Category, Value]
 
 # PHPMETRICS function
 def get_metrics():
