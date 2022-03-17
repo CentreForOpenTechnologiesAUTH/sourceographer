@@ -7,7 +7,7 @@ class ProjectAnalysis:
     ##To do: optimization to hide personal fields, use as is for now
     db = MySQLdb.connect(host="localhost",
                          user="phpmyadminuser",
-                         passwd="Propol@96jese",
+                         passwd="*******",
                          db="Sourceographer")
 
     mh = MetricsHandler.MetricsHandler()
