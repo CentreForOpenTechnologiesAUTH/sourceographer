@@ -37,23 +37,14 @@ This CSV file hosts the input and the output of the sourceographer analysis. Bef
 |Column	|	Name |					Description |
 --------------------------------------------------
 |A 		|	id	|					The id of the project (simple counter)|
---------------------------------------------------
 |B 		|	project_name	|		The name of the project|
---------------------------------------------------
 |C 		|	repo_name	|			The github repository name as it appears in the github url|
---------------------------------------------------
 |D 		|	language	|			The main programming language of the project	|
---------------------------------------------------
 |E 		|	version_tag		|		The version tag (just number) as it appears on github (i.e. 1.0.0)|
---------------------------------------------------
 |F		|	version_github_tag	|	The version tag (number with v prefix) (i.e. v1.0.0)	|
---------------------------------------------------
 |G 		|	repo_url			|	The repository url as it appears on Github |
---------------------------------------------------
 |H 		|	version_start_date	|	The start date of the version in yyyy-mm-dd format (i.e. 2020-10-10)|
---------------------------------------------------
 |I 		|	version_end_date	|	The end date of theversion in yyyy-mm-dd format (i.e. 2020-11-11)|
---------------------------------------------------
 
 - columns J - BK of the CSV file are used for storing output data so you leave them blank.
 - column BL (analysis_complete) is also automatically filled by the script after ossrf has run for the specific record. Every line that has analysis_complete column marked with 1 is ignored by the script in future runs of the algorithm.
