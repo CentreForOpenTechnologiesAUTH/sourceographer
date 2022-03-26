@@ -29,7 +29,7 @@ In order to successfully run the tool you need to:
 * Generate a personal Github API token using the guide included in the Useful Links section.
 * Run Sourceographer by using the command `python3 ossrf.py` after you have prepared the data.csv for your experiment in folder ./data. You can find a detailed description later in this README
 
-## Preparing the data.csv__ file.
+## Preparing the __data.csv__ file.
 
 This CSV file hosts the input and the output of the sourceographer analysis. Before you run the script you need to provide information for the following fields:
 
