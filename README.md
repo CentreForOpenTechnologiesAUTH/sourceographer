@@ -35,7 +35,7 @@ This CSV file hosts the input and the output of the sourceographer analysis. Bef
 
 
 |Column	|	Name |					Description |
---------------------------------------------------
+|-------|:-----------------------:|:------------------|
 |A 		|	id	|					The id of the project (simple counter)|
 |B 		|	project_name	|		The name of the project|
 |C 		|	repo_name	|			The github repository name as it appears in the github url|
