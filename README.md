@@ -12,7 +12,6 @@ __Step 1: Install all the requirements before proceeding to next steps:__
 * python3-matplotlib >= 2.1.1
 * python3-PyGithub (see Useful Links section) 
 * python3-tkinter >= 8.6
-* python3-xml.etree.ElementTree >= 1.3
 
 You should install all the python3 modules using the `pip3 install *package_name*` command.
 
@@ -20,11 +19,7 @@ You should install all the python3 modules using the `pip3 install *package_name
 
 __Step 2: Install integrated tools:__
 
-* Install the PHPQA (version 1.19) tool through the bash script `phpqa_installation.sh` found in the bash_scripts folder.
-
-To run phpqa's script you need to have: **composer** (see Useful Links section) and the **php-xsl** extension installed (sudo apt-get install php7.2-xls).
-
-More tools to be added in the future.
+* Install the PHPMetrics tool [following the information](https://phpmetrics.github.io/website/getting-started/) you will find in the official project.
 
 ## Running the tool
 
@@ -32,13 +27,38 @@ In order to successfully run the tool you need to:
 
 * Clone (git clone) or download the project.
 * Generate a personal Github API token using the guide included in the Useful Links section.
-* Insert the generated token in the `/sourceographer/githubAPI_testers/github_APIInfo.py` script on **line 6**.
-* Run Sourceographer by using the command `python3 flowcontroller.py` while being in githubAPI_testers folder.
-* Check the results in the outputs folder.
+* Run Sourceographer by using the command `python3 ossrf.py` after you have prepared the data.csv for your experiment in folder ./data. You can find a detailed description later in this README
 
-**Note #1:** The first three steps must be executed only once: the first time you are going to use Sourceographer.
+## Preparing the data.csv__ file.
 
-**Note #2:** Before executing the flowcontroller.py script, make sure that the `indicators.csv` and `input_metrics.csv` files are blank, containing only the column names with no data added.
+This CSV file hosts the input and the output of the sourceographer analysis. Before you run the script you need to provide information for the following fields:
+
+
+|Column	|	Name |					Description |
+--------------------------------------------------
+|A 		|	id	|					The id of the project (simple counter)|
+--------------------------------------------------
+|B 		|	project_name	|		The name of the project|
+--------------------------------------------------
+|C 		|	repo_name	|			The github repository name as it appears in the github url|
+--------------------------------------------------
+|D 		|	language	|			The main programming language of the project	|
+--------------------------------------------------
+|E 		|	version_tag		|		The version tag (just number) as it appears on github (i.e. 1.0.0)|
+--------------------------------------------------
+|F		|	version_github_tag	|	The version tag (number with v prefix) (i.e. v1.0.0)	|
+--------------------------------------------------
+|G 		|	repo_url			|	The repository url as it appears on Github |
+--------------------------------------------------
+|H 		|	version_start_date	|	The start date of the version in yyyy-mm-dd format (i.e. 2020-10-10)|
+--------------------------------------------------
+|I 		|	version_end_date	|	The end date of theversion in yyyy-mm-dd format (i.e. 2020-11-11)|
+--------------------------------------------------
+
+- columns J - BK of the CSV file are used for storing output data so you leave them blank.
+- column BL (analysis_complete) is also automatically filled by the script after ossrf has run for the specific record. Every line that has analysis_complete column marked with 1 is ignored by the script in future runs of the algorithm.
+- column BM (expert value) is a "helper" column. You can (optionally) put a number there (values between 1 - 5) and it will automatically fill all the expert related indicators of OSSRF with this value. If you have values from an expert, ay this point you need to put those values in the data.csv file manually.
+
 
 ## Theoretical basis
 
@@ -52,7 +72,7 @@ A detailed description of the full framework is available [here](http://users.au
 
 * PyGithub lib repo: https://github.com/PyGithub/PyGithub
 * Composer installation guide: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04
-* PHPQA (v1.19) Github repo: https://github.com/EdgedesignCZ/phpqa/tree/v1.19.0
+* PHP Metrics installation guide: https://phpmetrics.github.io/website/getting-started/
 * Generating a Github API token guide: https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
 ## Authors

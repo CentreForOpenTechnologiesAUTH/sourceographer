@@ -57,20 +57,20 @@ def callGUI(df, index):
     access_token_text = Entry(window)
     access_token_text.grid(row = 0, column = 1)
 
-    effectiveness = Label(window ,text = "Effectiveness").grid(row = 1,column = 0)
+    effectiveness = Label(window ,text = "Effectiveness [0-100]").grid(row = 1,column = 0)
     effectiveness_text = Entry(window)
     effectiveness_text.grid(row = 1, column = 1)
 
-    testing = Label(window ,text = "Testing process").grid(row = 2,column = 0)
+    testing = Label(window ,text = "Testing process [0,1]").grid(row = 2,column = 0)
     testing_var = IntVar()
     testing_R1 = Radiobutton(window, text="True", variable=testing_var, value=1).grid(row = 2, column = 1)
     testing_R2 = Radiobutton(window, text="False", variable=testing_var, value=0).grid(row = 2, column = 2)
 
-    coverage = Label(window ,text = "Coverage").grid(row = 3,column = 0)
+    coverage = Label(window ,text = "Coverage [0,100]").grid(row = 3,column = 0)
     coverage_text = Entry(window)
     coverage_text.grid(row = 3, column = 1)
 
-    licensing = Label(window ,text = "Licensing").grid(row = 4,column = 0)
+    licensing = Label(window ,text = "Licensing [1,2,3,4,5]").grid(row = 4,column = 0)
     licensing_var = IntVar()
     licensing_R1 = Radiobutton(window, text="1", variable=licensing_var, value=1).grid(row = 4, column = 1)
     licensing_R2 = Radiobutton(window, text="2", variable=licensing_var, value=2).grid(row = 4, column = 2)
@@ -78,72 +78,72 @@ def callGUI(df, index):
     licensing_R4 = Radiobutton(window, text="4", variable=licensing_var, value=4).grid(row = 4, column = 4)
     licensing_R5 = Radiobutton(window, text="5", variable=licensing_var, value=5).grid(row = 4, column = 5)
 
-    dual_licensing = Label(window ,text = "Dual licensing").grid(row = 5,column = 0)
+    dual_licensing = Label(window ,text = "Dual licensing [0,1]").grid(row = 5,column = 0)
     dual_var = IntVar()
     dual_R1 = Radiobutton(window, text="True", variable=dual_var, value=1).grid(row = 5, column = 1)
     dual_R2 = Radiobutton(window, text="False", variable=dual_var, value=0).grid(row = 5, column = 2)
 
-    comm_res = Label(window ,text = "Commercial resources").grid(row = 6,column = 0)
+    comm_res = Label(window ,text = "Commercial resources [0,1]").grid(row = 6,column = 0)
     res_var = IntVar()
     res_R1 = Radiobutton(window, text="True", variable=res_var, value=1).grid(row = 6, column = 1)
     res_R2 = Radiobutton(window, text="False", variable=res_var, value=0).grid(row = 6, column = 2)
 
-    comm_training = Label(window ,text = "Commercial training").grid(row = 7,column = 0)
+    comm_training = Label(window ,text = "Commercial training [0,1]").grid(row = 7,column = 0)
     training_var = IntVar()
     training_R1 = Radiobutton(window, text="True", variable=training_var, value=1).grid(row = 7, column = 1)
     training_R2 = Radiobutton(window, text="False", variable=training_var, value=0).grid(row = 7, column = 2)
 
-    industry_adoption = Label(window ,text = "Industry adoption").grid(row = 8,column = 0)
+    industry_adoption = Label(window ,text = "Industry adoption [0,1]").grid(row = 8,column = 0)
     adoption_var = IntVar()
     adoption_R1 = Radiobutton(window, text="True", variable=adoption_var, value=1).grid(row = 8, column = 1)
     adoption_R2 = Radiobutton(window, text="False", variable=adoption_var, value=0).grid(row = 8, column = 2)
 
-    non_profit = Label(window ,text = "Non profit support").grid(row = 9,column = 0)
+    non_profit = Label(window ,text = "Non profit support [0,1]").grid(row = 9,column = 0)
     non_var = IntVar()
     non_R1 = Radiobutton(window, text="True", variable=non_var, value=1).grid(row = 9, column = 1)
     non_R2 = Radiobutton(window, text="False", variable=non_var, value=0).grid(row = 9, column = 2)
 
-    for_profit = Label(window ,text = "For profit support").grid(row = 10,column = 0)
+    for_profit = Label(window ,text = "For profit support [0,1]").grid(row = 10,column = 0)
     for_var = IntVar()
     for_R1 = Radiobutton(window, text="True", variable=for_var, value=1).grid(row = 10, column = 1)
     for_R2 = Radiobutton(window, text="False", variable=for_var, value=0).grid(row = 10, column = 2)
 
-    donations = Label(window ,text = "Donations").grid(row = 11,column = 0)
+    donations = Label(window ,text = "Donations [0,1]").grid(row = 11,column = 0)
     donations_var = IntVar()
     donations_R1 = Radiobutton(window, text="True", variable=donations_var, value=1).grid(row = 11, column = 1)
     donations_R2 = Radiobutton(window, text="False", variable=donations_var, value=0).grid(row = 11, column = 2)
 
-    governance = Label(window ,text = "Governance Model").grid(row = 12,column = 0)
+    governance = Label(window ,text = "Governance Model [0,1]").grid(row = 12,column = 0)
     gov_var = IntVar()
     gov_R1 = Radiobutton(window, text="True", variable=gov_var, value=1).grid(row = 12, column = 1)
     gov_R2 = Radiobutton(window, text="False", variable=gov_var, value=0).grid(row = 12, column = 2)
 
-    roadmap = Label(window ,text = "Project Road-map").grid(row = 13,column = 0)
+    roadmap = Label(window ,text = "Project Road-map [0,1]").grid(row = 13,column = 0)
     roadmap_var = IntVar()
     roadmap_R1 = Radiobutton(window, text="True", variable=roadmap_var, value=1).grid(row = 13, column = 1)
     roadmap_R2 = Radiobutton(window, text="False", variable=roadmap_var, value=0).grid(row = 13, column = 2)
 
-    coc = Label(window ,text = "Code of Conduct").grid(row = 14,column = 0)
+    coc = Label(window ,text = "Code of Conduct [0,1]").grid(row = 14,column = 0)
     coc_var = IntVar()
     coc_R1 = Radiobutton(window, text="True", variable=coc_var, value=1).grid(row = 14, column = 1)
     coc_R2 = Radiobutton(window, text="False", variable=coc_var, value=0).grid(row = 14, column = 2)
 
-    coding_standards = Label(window ,text = "Coding standards").grid(row = 15,column = 0)
+    coding_standards = Label(window ,text = "Coding standards [0,1]").grid(row = 15,column = 0)
     coding_var = IntVar()
     coding_R1 = Radiobutton(window, text="True", variable=coding_var, value=1).grid(row = 15, column = 1)
     coding_R2 = Radiobutton(window, text="False", variable=coding_var, value=0).grid(row = 15, column = 2)
 
-    documentation_standards = Label(window ,text = "Documentation standards").grid(row = 16,column = 0)
+    documentation_standards = Label(window ,text = "Documentation standards [0,1]").grid(row = 16,column = 0)
     doc_var = IntVar()
     doc_R1 = Radiobutton(window, text="True", variable=doc_var, value=1).grid(row = 16, column = 1)
     doc_R2 = Radiobutton(window, text="False", variable=doc_var, value=0).grid(row = 16, column = 2)
 
-    localization = Label(window ,text = "Localization process").grid(row = 17,column = 0)
+    localization = Label(window ,text = "Localization process [0,1]").grid(row = 17,column = 0)
     loc_var = IntVar()
     loc_R1 = Radiobutton(window, text="True", variable=loc_var, value=1).grid(row = 17, column = 1)
     loc_R2 = Radiobutton(window, text="False", variable=loc_var, value=0).grid(row = 17, column = 2)
 
-    user_guide = Label(window ,text = "User guide").grid(row = 18,column = 0)
+    user_guide = Label(window ,text = "User guide [1,2,3,4,5]").grid(row = 18,column = 0)
     guide_var = IntVar()
     guide_R1 = Radiobutton(window, text="1", variable=guide_var, value=1).grid(row = 18, column = 1)
     guide_R2 = Radiobutton(window, text="2", variable=guide_var, value=2).grid(row = 18, column = 2)
@@ -153,22 +153,27 @@ def callGUI(df, index):
 
     repo_author = Label(window ,text = "Repository name in author/repo format").grid(row = 19,column = 0)
     repo_author_text = Entry(window)
+    repo_author_text.insert(0, df.at[index,'repo_name'])
     repo_author_text.grid(row = 19, column = 1)
 
     tag = Label(window ,text = "Version (repo specific tag name)").grid(row = 20,column = 0)
     tag_text = Entry(window)
+    tag_text.insert(0, df.at[index,'version_tag']) 
     tag_text.grid(row = 20, column = 1)
 
     url = Label(window ,text = "Repository URL").grid(row = 21,column = 0)
     url_text = Entry(window)
+    url_text.insert(0, df.at[index,'repo_url'])
     url_text.grid(row = 21, column = 1)
 
     start_d = Label(window ,text = "Version starting date (YYYY-MM-DD)").grid(row = 22,column = 0)
     start_d_text = Entry(window)
+    start_d_text.insert(0, df.at[index,'version_start_date'])
     start_d_text.grid(row = 22, column = 1)
 
     end_d = Label(window ,text = "Version ending date (YYYY-MM-DD)").grid(row = 23,column = 0)
     end_d_text = Entry(window)
+    end_d_text.insert(0, df.at[index,'version_end_date'])
     end_d_text.grid(row = 23, column = 1)
 
     def submit():
@@ -176,7 +181,7 @@ def callGUI(df, index):
         global githubToken
 
         githubToken = access_token_text.get()
-        df.at[index,'i4_effectiveness'] = float(effectiveness_text.get()) 
+        df.at[index,'i4_effectiveness'] = float(effectiveness_text.get()) / 100
         df.at[index,'i8_testing_process'] = testing_var.get()
         df.at[index,'i9_coverage'] = float(coverage_text.get()) / 100
         df.at[index,'i10_license_type'] = float(licensing_var.get()) / 5
@@ -251,8 +256,8 @@ def get_devs(df, index, d_start, d_end, g_repo, g):
     devs_attracted = round(new_devs_counter / all_time_devs) 
     active_devs = round(active_devs_counter / all_time_active_devs)
 
-    df.at[index,'i31_devs_attracted'] = devs_attracted
-    df.at[index,'i32_devs_active'] = active_devs
+    df.at[index,'i31_devs_attracted'] = round(int(devs_attracted) / 100, 2)
+    df.at[index,'i32_devs_active'] = round(int(active_devs) / 100, 2)
     
     print("Developers Attracted: ", devs_attracted, "%")
     print("Active Developers: ", active_devs, "%")
@@ -295,9 +300,9 @@ def get_issues(df, index, d_start, d_end, g_repo, g):
     open_closed_issues = round(closed_issues_version_counter / open_issues_version_counter)
     issue_tracking_activity = round(open_issues_version_counter / opened_issues_beginningToVersion_counter)
 
-    df.at[index,'i33_nof_open_issues'] = no_of_open_issues
-    df.at[index,'i34_open_vs_closed_issues'] = open_closed_issues
-    df.at[index,'i37_issue_tracking'] = issue_tracking_activity
+    df.at[index,'i33_nof_open_issues'] = round(int(no_of_open_issues) / 100, 2) 
+    df.at[index,'i34_open_vs_closed_issues'] = round(int(open_closed_issues) / 100, 2)
+    df.at[index,'i37_issue_tracking'] = round(int(issue_tracking_activity) / 100, 2)
     
     print("Number of Open Issues: ", no_of_open_issues, "%")
     print("Open/Closed Issues: ", open_closed_issues, "%")
@@ -341,12 +346,12 @@ def phpmetrics_export(df, index, filename):
         ["Warning", "Violations", ""],
         ["Information", "Violations", ""]
     ];
-    df = pd.DataFrame(phpmetrics, columns=['Metric','Category', 'Value']) 
+    df2 = pd.DataFrame(phpmetrics, columns=['Metric','Category', 'Value']) 
     with open('phpmetrics.txt') as f:
         lines = f.readlines() # list containing lines of file
         for line in lines:
             line = line.strip() # remove leading/trailing white spaces    
-            for index, row in df.iterrows():
+            for index2, row in df2.iterrows():
                 if row['Metric'] == "Average defects by class (Kan)":
                     if re.search(r"\b"+"(Kan)"+r"\b",line) and row['Value'] == "": # add value only if there is not one yet.
                         s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
@@ -357,12 +362,14 @@ def phpmetrics_export(df, index, filename):
                         s_nums = re.findall(r"[-+]?\d*\.\d+|\d+", str(line))
                         logging.info(row['Metric'] + ": " + s_nums[0]) # logging
                         row['Value'] = s_nums[0]
-    df.to_json (r'phpmetrics.json', orient='records') # export to JSON with each item to reflect a tuple [Metric, Category, Value]
+    project_name = df.at[index,'project_name'] + "_" + df.at[index,'version_tag'] + "_" + df.at[index,'version_start_date'] + "_" + df.at[index,'version_end_date'] + "_" + 'phpmetric.json'
+    df2.to_json (r'./data/'+project_name, orient='records') # export to JSON with each item to reflect a tuple [Metric, Category, Value]
 
 def get_metrics(df, index):
     """ PHPMETRICS function """
+    project_name = df.at[index,'project_name'] + "_" + df.at[index,'version_tag'] + "_" + df.at[index,'version_start_date'] + "_" + df.at[index,'version_end_date'] + "_" + 'phpmetric.json'
     # read file
-    with open('phpmetrics.json', 'r') as myfile:
+    with open('./data/'+project_name, 'r') as myfile:
         data=myfile.read()
     # parse file
     obj = json.loads(data)
@@ -427,35 +434,34 @@ def get_metrics(df, index):
         else:
             coh = 1   
 
-    df.at[index,'i25_cohesion'] = round(int(coh) / 3)
-    df.at[index,'i35_documendation'] = round(int(lloc)/int(loc))
+    df.at[index,'i25_cohesion'] = round(int(coh) / 3, 2)
+    df.at[index,'i35_documendation'] = round(int(lloc)/int(loc), 2)
 
 """ MAIN FUNCTION """
 def main():
     global githubToken
-    df = pd.read_csv("./data/input.csv", index_col=0) # Read CSV with input data
-    
+    df = pd.read_csv("./data/data.csv", index_col=0) # Read CSV with input data
+
     # For every row (project / version)
     for index, row in df.iterrows():
         if row.analysis_complete != 1:
             
             # STEP 1: Initialize qualitative values with auto_expert_value field *** if not set by an expert *** // 11 indicators
             if not pd.isna(row.auto_expert_value):
-                df.at[index,'i1_robustness'] = row.auto_expert_value  / 5
-                df.at[index,'i2_scalability'] = row.auto_expert_value / 5
-                df.at[index,'i3_usability'] = row.auto_expert_value / 5
-                df.at[index,'i5_corrections'] = row.auto_expert_value / 5
-                df.at[index,'i6_improvements'] = row.auto_expert_value / 5
-                df.at[index,'i7_security'] = row.auto_expert_value / 5
-                df.at[index,'i18_installability'] = row.auto_expert_value / 5
-                df.at[index,'i19_configurability'] = row.auto_expert_value / 5
-                df.at[index,'i20_self_contained'] = row.auto_expert_value / 5
-                df.at[index,'i21_resource_utilization'] = row.auto_expert_value / 5
-                df.at[index,'i23_modularity'] = row.auto_expert_value / 5
+                df.at[index,'i1_robustness'] = round(row.auto_expert_value  / 5,2)
+                df.at[index,'i2_scalability'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i3_usability'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i5_corrections'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i6_improvements'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i7_security'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i18_installability'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i19_configurability'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i20_self_contained'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i21_resource_utilization'] = round(row.auto_expert_value / 5,2)
+                df.at[index,'i23_modularity'] = round(row.auto_expert_value / 5,2)
 
             # STEP 2: Get user input via GUI // 18 indicators
             callGUI(df, index) 
-            print("out" + githubToken)
             g = Github(githubToken)
 
             # STEP 3:Get Github input // 5 indicators
@@ -481,44 +487,157 @@ def main():
 
                 # Calculate OSSRF goals and dimensions output
                 g1 = ( df.at[index,'i1_robustness'] + df.at[index,'i2_scalability'] + df.at[index,'i3_usability'] + df.at[index,'i4_effectiveness'] ) / 4
-                df.at[index,'g1_architecture'] = round( g1 * 100 )
+                df.at[index,'g1_architecture'] = round(g1,2)
                 g2 = ( df.at[index,'i5_corrections'] + df.at[index,'i6_improvements'] ) / 2
-                df.at[index,'g2_maintenability'] = round( g2 * 100 )
+                df.at[index,'g2_maintenability'] = round(g2,2)
                 g3 = ( df.at[index,'i7_security'] + df.at[index,'i8_testing_process'] + df.at[index,'i9_coverage'] ) / 3
-                df.at[index,'g3_security_testing'] = round( g3 * 100 )
+                df.at[index,'g3_security_testing'] = round(g3,2)
                 g4 = df.at[index,'i10_license_type']
-                df.at[index,'g4_license'] = round( g4 * 100 )
+                df.at[index,'g4_license'] = round(g4,2)
                 g5 = ( df.at[index,'i11_dual_licensing'] + df.at[index,'i12_commercial_resources'] + df.at[index,'i13_commercial_training'] + df.at[index,'i14_industry_adoption'] ) / 4
-                df.at[index,'g5_market'] = round( g5 * 100 )
+                df.at[index,'g5_market'] = round(g5,2)
                 g6 = ( df.at[index,'i15_ngo_support'] + df.at[index,'i16_corporate_support'] + df.at[index,'i17_donations'] ) / 3
-                df.at[index,'g6_support'] = round( g6 * 100 )
+                df.at[index,'g6_support'] = round(g6,2)
                 g7 = ( df.at[index,'i18_installability'] + df.at[index,'i19_configurability'] ) / 2
-                df.at[index,'g7_initialization'] = round( g7 * 100 )
+                df.at[index,'g7_initialization'] = round(g7,2)
                 g8 = ( df.at[index,'i20_self_contained'] + df.at[index,'i21_resource_utilization'] ) / 2
-                df.at[index,'g8_dependencies'] = round( g8 * 100 )
+                df.at[index,'g8_dependencies'] = round(g8,2)
                 g9 = ( df.at[index,'i22_complexity'] + df.at[index,'i23_modularity'] + df.at[index,'i24_instability'] + df.at[index,'i25_cohesion'] ) / 4
-                df.at[index,'g9_reuse'] = round( g9 * 100 )
+                df.at[index,'g9_reuse'] = round(g9,2)
                 g10 = ( df.at[index,'i26_governance_model'] + df.at[index,'i27_project_road_map'] + df.at[index,'i28_code_of_conduct'] + df.at[index,'i29_coding_standards'] + df.at[index,'i30_documentation_standards'] ) / 5
-                df.at[index,'g10_dev_process_governance'] = round( g10 * 100 )
+                df.at[index,'g10_dev_process_governance'] = round(g10,2)
                 g11 = ( df.at[index,'i31_devs_attracted'] + df.at[index,'i32_devs_active'] + df.at[index,'i33_nof_open_issues'] + df.at[index,'i34_open_vs_closed_issues'] + df.at[index,'i35_documendation'] ) / 5
-                df.at[index,'g11_developer_base'] = round( g11 * 100 )
+                df.at[index,'g11_developer_base'] = round(g11,2)
                 g12 = ( df.at[index,'i36_localization_process'] + df.at[index,'i37_issue_tracking'] + df.at[index,'i38_user_guide'] ) / 3
-                df.at[index,'g12_user_base'] = round( g12 * 100 )
+                df.at[index,'g12_user_base'] = round(g12,2)
                 
                 d1 = ( g1 + g2 + g3 ) / 3
-                df.at[index,'d1_source_code'] = round( d1 * 100 )
+                df.at[index,'d1_source_code'] = round(d1,2)
                 d2 = ( g4 + g5 + g6 ) / 3
-                df.at[index,'d2_business_legal'] = round( d2 * 100 )
+                df.at[index,'d2_business_legal'] = round(d2,2)
                 d3 = ( g7 + g8 + g9 ) / 3
-                df.at[index,'d3_integration_reuse'] = round( d3 * 100 )
+                df.at[index,'d3_integration_reuse'] = round(d3,2)
                 d4 = ( g10 + g11 + g12 ) / 3
-                df.at[index,'d4_social'] = round( d4 * 100 )
+                df.at[index,'d4_social'] = round(d4,2)
+
+                project_name = df.at[index,'project_name'] + "_" + df.at[index,'version_tag'] + "_" + df.at[index,'version_start_date'] + "_" + df.at[index,'version_end_date']
+    
+                # Visualizations
+
+                # Spider chart based on: https://williamhuster.com/radar-chart-in-python/
+                rfoss_goals = {
+                  'Architecture': g1*100,
+                  'Maintainability': g2*100,
+                  'Security & Testing': g3*100,
+                  'License': g4*100,
+                  'Market': g5*100,
+                  'Support': g6*100,
+                  'Initialization': g7*100,
+                  'Dependencies': g8*100,
+                  'Reuse': g9*100,
+                  'Development process & Governance': g10*100,
+                  'Developer Base': g11*100,
+                  'User Base': g12*100
+                }
+
+                df3 = pd.DataFrame([rfoss_goals])
+
+                skills = list(df3)
+                num_skills = len(skills)
+
+                angles = [i / float(num_skills) * 2 * pi for i in range(num_skills)]
+                #angles += angles[:1]  # repeat the first value to close the circle
+
+                GRAY = '#999999'
+
+                # Clear the plot to start with a blank canvas.
+                plt.clf()
+
+                # Create subplots for each data series
+                series_1 = plt.subplot(1, 1, 1, polar=True)
+
+                # Draw one x-axis per variable and add labels
+                plt.xticks(angles, skills, color=GRAY, size=8)
+
+                # Draw the y-axis labels. To keep the graph uncluttered,
+                # include lines and labels at only a few values.
+                plt.yticks(
+                  [20, 40, 60, 80],
+                  ['20', '40', '60', '80'],
+                  color=GRAY,
+                  size=7
+                )
+
+                # Constrain y axis to range 0-100
+                plt.ylim(0,100)
+
+                series_1_values = df3.loc[0] \
+                                    .values \
+                                    .flatten() \
+                                    .tolist()
+                #series_1_values += series_1_values[:1]  # duplicate first element to close the circle
+
+                # Set up colors
+                ORANGE = '#FD7120'
+                BLUE = '#00BFFF'
+
+                # Plot the first series
+                series_1.set_rlabel_position(0)
+                series_1.plot(
+                  angles,
+                  series_1_values,
+                  color=ORANGE,
+                  linestyle='solid',
+                  linewidth=1,
+                )
+                series_1.fill(
+                  angles,
+                  series_1_values,
+                  color=ORANGE,
+                  alpha=0.6
+                )
+
+                # Save the image
+                out_radar = "./data/" + project_name + "_radar.png"
+                plt.savefig(out_radar)
+                # Show plot
+                #plt.show()
+
+
+                # Bar chart
+                # Clear the plot to start with a blank canvas.
+                plt.clf()
+
+                N = 1
+                d1_bar = d1
+                d2_bar = d2
+                d3_bar = d3
+                d4_bar = d4
+
+                ind = np.arange(N) 
+                width = 0.15       
+                plt.bar(ind, d1_bar, width, label='Source Code')
+                plt.bar(ind + width, d2_bar, width, label='Business & Legal')
+                plt.bar(ind + 2*width, d3_bar, width, label='Integration & Reuse')
+                plt.bar(ind + 3*width, d4_bar, width, label='Social')
+
+                plt.ylabel('Scores')
+                plt.title('Dimensions')
+
+                #plt.xticks(ind + width / 2, ('D1', 'D2', 'D3', 'D4'))
+                plt.legend(loc='best')
+
+                # Save the image
+                out_bar = "./data/" + project_name + "_bar.png"
+                plt.savefig(out_bar)
+                # Show plot
+                #plt.show()
 
             # Update row when analysis is complete (analysis_complete = YES)
             df.at[index,'analysis_complete'] = 1
 
     # Write the updated dataframe to CSV
-    df.to_csv("./data/input.csv")
+    df.to_csv("./data/data.csv")
 
 if __name__ == "__main__":
     main()
