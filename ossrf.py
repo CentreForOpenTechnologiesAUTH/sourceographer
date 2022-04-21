@@ -216,7 +216,11 @@ def get_devs(df, index, d_start, d_end, g_repo, g):
     print("all time devs: ", all_time_devs)
     print("all time active devs: ", all_time_active_devs)
     devs_attracted = round(new_devs_counter / all_time_devs) 
-    active_devs = round(active_devs_counter / all_time_active_devs)
+    # Checking the number of all_time_active_devs and continue the calculation of 'active_devs' or not 
+    if all_time_active_devs > 0:
+        active_devs = round(active_devs_counter / all_time_active_devs)
+    else:
+    	active_devs = 0
     df.at[index,'i31_devs_attracted'] = round(int(devs_attracted) / 100, 2)
     df.at[index,'i32_devs_active'] = round(int(active_devs) / 100, 2)
     print("Developers Attracted: ", devs_attracted, "%")
@@ -248,9 +252,18 @@ def get_issues(df, index, d_start, d_end, g_repo, g):
     print("Opened issues(version): ", open_issues_version_counter)
     print("Opened issues(beginning-version): ", opened_issues_beginningToVersion_counter)
     print("Closed issues(version): ", closed_issues_version_counter)
-    no_of_open_issues = round(1 - (open_issues_version_counter / opened_issues_beginningToVersion_counter))
-    open_closed_issues = round(closed_issues_version_counter / open_issues_version_counter)
-    issue_tracking_activity = round(open_issues_version_counter / opened_issues_beginningToVersion_counter)
+    # Checking the number of 'opened_issues_beginningToVersion_counter' and continue the calculation of 'no_of_open_issues' or not
+    if opened_issues_beginningToVersion_counter > 0:
+        no_of_open_issues = round(1 - (open_issues_version_counter / opened_issues_beginningToVersion_counter))
+    else:
+    	no_of_open_issues = 0
+    # Checking the number of 'no_of_open_issues' and continue the calculation of 'open_closed_issues' and 'issue_tracking_activity' or not
+    if no_of_open_issues > 0:
+    	open_closed_issues = round(closed_issues_version_counter / open_issues_version_counter)
+    	issue_tracking_activity = round(open_issues_version_counter / opened_issues_beginningToVersion_counter)
+    else:
+        open_closed_issues = 0
+        issue_tracking_activity = 0
     df.at[index,'i33_nof_open_issues'] = round(int(no_of_open_issues) / 100, 2) 
     df.at[index,'i34_open_vs_closed_issues'] = round(int(open_closed_issues) / 100, 2)
     df.at[index,'i37_issue_tracking'] = round(int(issue_tracking_activity) / 100, 2)
@@ -392,8 +405,11 @@ def main():
     logging.info("data.csv successfully read")
     # For every row (project / version)
     for index, row in df.iterrows():
-        project_name = df.at[index, 'project_name'] + "_" + df.at[index, 'version_tag'] + "_" + df.at[
-            index, 'version_start_date'] + "_" + df.at[index, 'version_end_date']
+    	# Checking if version_tag has a valid value or not
+        if df.at[index, 'version_tag'] != '-':
+            project_name = df.at[index, 'project_name'] + "_" + df.at[index, 'version_tag'] + "_" + df.at[index, 'version_start_date'] + "_" + df.at[index, 'version_end_date']
+        else:
+            project_name = df.at[index, 'project_name']
         if row.analysis_complete != 1:
             # STEP 1: Initialize qualitative values with auto_expert_value field *** if not set by an expert *** // 11 indicators
             if not pd.isna(row.auto_expert_value):
@@ -425,7 +441,11 @@ def main():
             if row.language == 'PHP':   #XXX: To generate logic for non PHP programs
                 url = row.repo_url
                 tag = row.version_github_tag
-                os.system('git clone {0} --branch {1}'.format(url, tag))
+                # Checking if version_github_tag has a valid value or not
+                if tag != '-':
+                    os.system('git clone {0} --branch {1}'.format(url, tag))
+                else:
+                    os.system('git clone {0}'.format(url))
                 a_r = row.repo_name
                 pos = a_r.find('/')
                 repo_name = a_r[pos+1:]
