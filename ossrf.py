@@ -570,10 +570,10 @@ def main():
             d4_bar = d4
             ind = np.arange(N)
             width = 0.15
-            plt.bar(ind, d1_bar, width, label='Source Code')
-            plt.bar(ind + width, d2_bar, width, label='Business & Legal')
-            plt.bar(ind + 2*width, d3_bar, width, label='Integration & Reuse')
-            plt.bar(ind + 3*width, d4_bar, width, label='Social')
+            plt.bar(ind, d1_bar, width, color='darkgreen', label='Source Code')
+            plt.bar(ind + width, d2_bar, width, color='royalblue', label='Business & Legal')
+            plt.bar(ind + 2*width, d3_bar, width, color='gold', label='Integration & Reuse')
+            plt.bar(ind + 3*width, d4_bar, width, color='slateblue', label='Social')
             plt.ylabel('Scores')
             plt.title('Dimensions')
             #plt.xticks(ind + width / 2, ('D1', 'D2', 'D3', 'D4'))
