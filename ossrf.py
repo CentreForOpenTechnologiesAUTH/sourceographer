@@ -38,6 +38,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 from github import Github
+from sys import platform
 
 githubToken = '' # //XXX: Global variable. Should be changed to a non global variable logic
 
@@ -451,7 +452,12 @@ def main():
                 repo_name = a_r[pos+1:]
                 os.system('phpmetrics --report-html=myreport ./{0} >> phpmetrics.txt'.format(repo_name))
                 phpmetrics_export(df, index, 'phpmetrics.txt')
-                os.system('rm phpmetrics.txt')
+                if platform == "linux" or platform == "linux2":
+                    os.system('rm phpmetrics.txt')
+                elif platform == "darwin":
+                    print("OSX not supported!")
+                elif platform == "win32":
+                    os.system('del phpmetrics.txt')
                 get_metrics(df, index)
             else:
                 df.at[index, 'i22_complexity'] = round(row.auto_expert_value  / 5,2)
