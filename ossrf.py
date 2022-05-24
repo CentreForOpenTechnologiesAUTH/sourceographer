@@ -253,8 +253,8 @@ def get_issues(df, index, d_start, d_end, g_repo, g):
     print("Opened issues(version): ", open_issues_version_counter)
     print("Opened issues(beginning-version): ", opened_issues_beginningToVersion_counter)
     print("Closed issues(version): ", closed_issues_version_counter)
-    # Checking the number of 'opened_issues_beginningToVersion_counter' and continue the calculation of 'no_of_open_issues' or not
-    if opened_issues_beginningToVersion_counter > 0:
+    # Checking the number of 'opened_issues_beginningToVersion_counter','open_issues_version_counter' and continue the calculation of 'no_of_open_issues' or not
+    if opened_issues_beginningToVersion_counter > 0 and open_issues_version_counter > 0:
         no_of_open_issues = round(1 - (open_issues_version_counter / opened_issues_beginningToVersion_counter))
     else:
     	no_of_open_issues = 0
@@ -588,6 +588,24 @@ def main():
             out_bar = "./data/" + project_name + "_bar.png"
             plt.savefig(out_bar)
             # Show plot
+            #plt.show()
+            #Pie chart
+            ## Clear the plot to start with a blank canvas
+            plt.clf()
+            y =  np.array([d1_bar,d2_bar,d3_bar,d4_bar])
+            #labels for each slice
+            my_labels=['Source Code', 'Business & Legal', 'Integration & Reuse', 'Social']
+            my_colors =['darkgreen','royalblue','gold','slateblue']  
+
+            fig1, ax1 = plt.subplots()
+            ax1.pie(y, labels=my_labels, autopct='%1.1f%%')
+            # Equal aspect ratio ensures that pie is drawn as a circle.
+            ax1.axis('equal')  
+            plt.pie(y, labels = my_labels, colors=my_colors)
+            #save the image
+            out_pie = "./data/" + project_name + "_pie.png"
+            plt.savefig(out_pie)
+            #Show plot
             #plt.show()
             logging.info("Visualizations done!")
             # Update row when analysis is complete (analysis_complete = YES)
