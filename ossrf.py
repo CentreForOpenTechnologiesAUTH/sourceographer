@@ -395,6 +395,7 @@ def get_metrics(df, index):
         else:
             coh = 1
     df.at[index,'i25_cohesion'] = round(int(coh) / 3, 2)
+
     #Checking if loc has a valid value or not
     if loc > 0:
         df.at[index,'i35_documendation'] = round(int(lloc)/int(loc), 2)
