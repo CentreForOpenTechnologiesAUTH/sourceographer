@@ -1,4 +1,4 @@
-# Source-o-grapher Tool [![DOI](https://zenodo.org/badge/415536303.svg)](https://zenodo.org/badge/latestdoi/415536303)
+# Source-o-grapher Tool [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7080150.svg)](https://doi.org/10.5281/zenodo.7080150)
 
 Source-o-grapher is a tool built with the aim to investigate software resilience aspects of Open Source Software (OSS) projects. The tool uses several metrics from the literature to evaluate an OSS project on four major dimensions: structural (source code), business and legal, integration and social (community of the project). Many of these metrics are automatically acquired by the tool using the Github repository of the project whereas some others are manually input by the expert who performs the analysis.
 
