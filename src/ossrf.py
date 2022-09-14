@@ -581,10 +581,10 @@ def main():
             d4_bar = d4
             ind = np.arange(N)
             width = 0.15
-            plt.bar(ind, d1_bar, width, color='darkgreen', label='Source Code')
-            plt.bar(ind + width, d2_bar, width, color='royalblue', label='Business & Legal')
-            plt.bar(ind + 2*width, d3_bar, width, color='gold', label='Integration & Reuse')
-            plt.bar(ind + 3*width, d4_bar, width, color='slateblue', label='Social')
+            plt.bar(ind, d1_bar, width, color='blue', label='Source Code')
+            plt.bar(ind + width, d2_bar, width, color='orange', label='Business & Legal')
+            plt.bar(ind + 2*width, d3_bar, width, color='green', label='Integration & Reuse')
+            plt.bar(ind + 3*width, d4_bar, width, color='red', label='Social')
             plt.ylabel('Scores')
             plt.title('Dimensions')
             #plt.xticks(ind + width / 2, ('D1', 'D2', 'D3', 'D4'))
@@ -593,7 +593,8 @@ def main():
             out_bar = "./data/" + project_name + "_bar.png"
             plt.savefig(out_bar)
             # Show plot
-            #plt.show()
+            #plt.show() 
+            """
             #Pie chart
             ## Clear the plot to start with a blank canvas
             plt.clf()
@@ -611,7 +612,8 @@ def main():
             out_pie = "./data/" + project_name + "_pie.png"
             plt.savefig(out_pie)
             #Show plot
-            #plt.show()
+            #plt.show() 
+            """
             logging.info("Visualizations done!")
             # Update row when analysis is complete (analysis_complete = YES)
             df.at[index,'analysis_complete'] = 1
