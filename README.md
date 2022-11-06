@@ -72,3 +72,10 @@ A detailed description of the full framework is available [here](http://users.au
 - Apostolos Kritikos, [e-mail](mailto:akritiko@csd.auth.gr), [github](https://github.com/akritiko)
 - Prodromos Polychroniadis, [e-mail](mailto:prodpoly@csd.auth.gr), [github](https://github.com/propol)
 - Ioannis Stamelos, [e-mail](mailto:stamelos@csd.auth.gr), [github](https://github.com/Stamelos)
+
+## Contributors
+
+We would like to extend our appreciation for their contributions to the following colleagues:
+
+- Petros Kafkias
+- Chrysovalantis Vrasidis
