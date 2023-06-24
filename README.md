@@ -68,14 +68,9 @@ A detailed description of the full framework is available [here](http://users.au
 * PHP Metrics installation guide: https://phpmetrics.github.io/website/getting-started/
 * Generating a Github API token guide: https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
-## Authors
+## Contributors
 - Apostolos Kritikos, [e-mail](mailto:akritiko@csd.auth.gr), [github](https://github.com/akritiko)
 - Prodromos Polychroniadis, [e-mail](mailto:prodpoly@csd.auth.gr), [github](https://github.com/propol)
 - Ioannis Stamelos, [e-mail](mailto:stamelos@csd.auth.gr), [github](https://github.com/Stamelos)
-
-## Contributors
-
-We would like to extend our appreciation for their contributions to the following colleagues:
-
 - Petros Kafkias
 - Chrysovalantis Vrasidis
