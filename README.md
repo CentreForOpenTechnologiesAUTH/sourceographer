@@ -69,8 +69,8 @@ A detailed description of the full framework is available [here](http://users.au
 * Generating a Github API token guide: https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
 ## Contributors
-- Apostolos Kritikos, [e-mail](mailto:akritiko@csd.auth.gr), [github](https://github.com/akritiko)
-- Prodromos Polychroniadis, [e-mail](mailto:prodpoly@csd.auth.gr), [github](https://github.com/propol)
-- Ioannis Stamelos, [e-mail](mailto:stamelos@csd.auth.gr), [github](https://github.com/Stamelos)
-- Petros Kafkias
-- Chrysovalantis Vrasidis
+- Apostolos Kritikos, [e-mail](mailto:akritiko@csd.auth.gr), [Github](https://github.com/akritiko)
+- Prodromos Polychroniadis, [e-mail](mailto:prodpoly@csd.auth.gr), [Github](https://github.com/propol)
+- Ioannis Stamelos, [e-mail](mailto:stamelos@csd.auth.gr), [Github](https://github.com/Stamelos)
+- Petros Kafkias, [Github](https://github.com/kafkiasp)
+- Chrysovalantis Vrasidis, [Github](https://github.com/chvrasidis)
